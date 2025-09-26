@@ -35,7 +35,6 @@ def conditional_probability(values):
         return 0
 
     poss = count_AB / count_A
-
     return poss
 
 
@@ -44,6 +43,7 @@ def bayesian_probability(a, b, ba):
         return 0
     poss = (ba * a) / b
     return poss
+
 
 
 
