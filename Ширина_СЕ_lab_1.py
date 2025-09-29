@@ -30,19 +30,17 @@ def conditional_probability(values):
             count_A += 1
             if m == 1:
                 count_AB += 1
-
-    if count_A == 0:
-        return 0
+        else:
+            return 0
 
     poss = count_AB / count_A
     return poss
 
 
 def bayesian_probability(a, b, ba):
-    if b == 0:
-        return 0
     poss = (ba * a) / b
     return poss
+
 
 
 
